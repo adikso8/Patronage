@@ -1,0 +1,161 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans';
+}
+
+/* header*/
+nav{
+    display: flex;
+    background-color: #808080;
+    padding: 1em;
+    column-gap: 1em;
+
+}
+#logintest{
+    padding: .5em;
+}
+.push {
+    margin-left: auto;
+}
+
+.button{
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #a9a9a9;
+    margin: 0;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.button:active{
+    text-decoration: underline;
+    background-color: #d3d3d3;
+}
+
+/*body */
+
+#content{
+    padding-top: 1em;
+    display: block;
+    text-align: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+/*non logged user view */
+
+article{
+    display: flex;
+    justify-content:center;
+}
+
+#Lorem-ipsum{
+   width:80%; 
+   white-space: pre-line;
+   text-align: left;
+}
+
+/* login and register view */
+
+ul li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+  
+}
+
+ul > li > label {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+  
+ul > li > label + * {
+    flex: 1 0 220px;
+}
+
+/*logged user view */
+
+#flex-chart {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-left: .5em;
+  }
+
+
+.chart-container{
+    border: 1px solid black;
+    position: relative;
+    width: min-content;
+    margin-bottom: 1em;
+    height:auto;
+    
+}
+#filter{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap:.5em;
+    flex-wrap: wrap;
+}
+#table{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+table,
+td {
+    border: 1px solid #333;
+    padding: 0.5em;
+}
+
+th{
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.hiddenRow{
+display: none;}
+
+.hiddenRow > td{
+border: 1px solid #333;
+border-top-style: none ;
+}
+
+.icon{
+    width:2em;
+    height:2em;
+}
+
+@media (min-width: 600px) {
+ 
+/* header*/
+
+.button:hover{
+    text-decoration: underline;
+    background-color: #d3d3d3;
+}
+
+/*logged user view */
+
+#flex-chart {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 1em;
+  }
+
+#myChart2{
+    width:600px;
+    height: auto;
+}
+
+}
